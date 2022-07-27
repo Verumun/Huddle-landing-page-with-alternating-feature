@@ -1,0 +1,456 @@
+
+
+
+@import 'abstracts/variables';
+
+@import 'base/reset';
+@import 'base/typography';
+
+
+
+
+
+
+header{
+    background-image: url('../images/bg-hero-mobile.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color:$Very-Pale-Cyan;
+
+    .nav-bar{
+        width: 95%;
+        margin: 0 auto;
+        padding: 2rem 0 0 0;
+    
+        img{
+            width: 11rem;
+        }
+
+        a{
+            font-size: $link-font;
+            font-weight: 600;
+            float: right;
+            text-decoration: none;
+            background-color: #fff;
+            padding: .5rem 2rem;
+            margin-top: -.5rem;
+            border-radius: 3rem;
+            color: $Very-Dark-Cyan;
+            text-align: center;
+        }
+    }    
+    
+    .header-content{
+        
+
+        &-layout{
+            margin-top: 2rem;
+
+            img{
+                padding: 0 2rem 2.5rem;
+            }
+    
+            &_community{
+                text-align: center;
+                padding: 2rem 1.5rem;
+    
+                h3{
+                    font-size: $header-h3-font;
+                    margin-bottom: 3rem;
+                    padding: 0 2rem;
+                    line-height: $default-line-height;
+                    color: $Very-Dark-Cyan;
+                }
+    
+                p{
+                    padding: 0 1rem;
+                    line-height: $default-line-height;
+                    color: $Very-Dark-Cyan;
+                    opacity: .8;
+                }
+    
+                a{
+                    display: inline-block;
+                    margin: 5rem 0;
+                    background-color: $Pink;
+                    color: $Very-Pale-Cyan;
+                    padding: 1.5rem 6rem;
+                    border-radius: 3rem;
+                    text-decoration: none;
+                }
+
+                
+            }
+        }
+    }
+
+    
+}
+
+main{
+   background-color: #fff;
+   padding: 3rem 0rem;
+
+   .content{
+       display: flex;
+       flex-direction: column;
+       background-color:#fff;
+       box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
+       border-radius: 2rem;
+       padding: 4rem 0;
+       margin: 2rem;
+
+       img{
+        width: 25rem;
+        margin: 0 auto;
+    
+    }
+
+
+
+       div{
+           text-align: center;
+           margin-top: 5rem;
+           padding: 0 1rem;
+
+           
+
+           h3{
+               color: $Very-Dark-Cyan;
+           }
+
+           p{
+               font-size: 1.5rem;
+               color: #00252e7a;
+               line-height: 1.4;
+               font-weight: lighter;
+               padding: 2rem 2rem 4rem 2rem;
+
+           }
+
+          
+
+       }
+
+       
+
+       &_together, &_users{
+           display: flex;
+           flex-direction: column-reverse;
+
+           img{
+               padding-top: 2rem;
+           }
+       }
+
+
+       
+       
+      
+   }
+}
+
+.in-between{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 2rem;
+    padding: 5rem 1rem;
+    position: relative;
+    bottom: -6rem;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .3);
+
+    div{
+
+        h3{
+            font-size: 1.8rem;
+            margin-bottom: 3rem;
+        }
+
+        a{
+            text-decoration: none;
+            font-size: $link-font;
+            color: #fff;
+            background-color: $Pink;
+            padding: 2rem 5rem;
+            border-radius: 3rem;
+        }
+    }
+}
+
+
+footer{
+    background-color: $Very-Dark-Cyan;
+    padding: 15rem 0;
+
+    img{
+        width: initial;
+    }
+
+    .contact-info{
+        color: #fff;
+        font-weight: lighter;
+        width: 90%;
+        margin: 0 auto;
+
+
+        .contact{
+            
+            & > div{
+                margin: 3rem 0;
+            }
+
+            .logo-footer{
+                filter: brightness(0) invert(1);
+            }
+            
+            
+            div{
+                display: flex;
+                flex-direction: row;
+                line-height: $default-line-height;
+                gap: 4rem;
+                
+
+                img{
+                    width: 3rem;
+                    height: 2.5rem;
+                    // margin-right: 5rem;
+                }
+            }
+        }
+
+        .links{
+            margin-top: 5rem;
+            ul li{
+                list-style-type: none;
+                line-height: 2.5;
+            }
+        }
+
+        .socials{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 5rem;
+            margin-bottom: 3rem;
+
+            li{
+                list-style-type: none;
+
+                i{
+                    text-align: center;
+                    border: 1px solid #fff;
+                    border-radius: 50%;
+                    padding: 1rem;
+                }
+            }
+        }
+    }
+
+    .copyright{
+        color: #fff;
+        text-align: center;
+        font-weight: lighter;
+        font-size: 1.2rem;
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+
+//@media only screen and (min-width:700px){}
+
+@media only screen and (min-width:768px){
+
+
+    header{
+        .header-content-layout{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+
+            div{
+                text-align: initial;
+            }
+        }
+    }
+
+    main{
+
+        .content{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+
+
+            &_conversations{
+                div{
+                    margin-right: 2rem;
+                }
+            }
+
+            div{
+                text-align: initial;
+                margin-left: 5rem;
+                align-items: center;
+
+
+
+                p{
+                    padding:2rem 0 4rem 0;
+                }
+            }
+
+            
+    
+             
+        }
+
+    }
+    
+}
+
+@media only screen and (min-width:1024px){
+    
+    header{
+        
+        .header-content, .nav-bar{
+            width: 95%;
+            margin: 0 auto;
+        }
+
+
+
+        .header-content-layout{
+
+            &_community{
+                text-align: initial;
+            }
+        }
+    }
+    
+    main{
+        .content{
+            div{
+                p{
+                    font-size: initial;
+                }
+            }
+            img{
+                width: 30rem;
+            }
+        }
+    }
+
+    footer{
+    
+        .contact-info{
+           display: flex;
+           justify-content: space-between;
+            // align-items: center;
+    
+            .contact{
+                max-width: 32rem;
+            }
+    
+            .links{
+                display: flex;
+                gap: 7rem;
+                margin-top: 6.5rem;
+            }
+    
+            .socials{
+                display: flex;
+                align-items: unset;
+                gap: 2rem;
+                margin-top: 7rem;
+                margin-bottom: 0;
+            }
+        }
+    
+        .copyright{
+            text-align: right;
+        }
+    }
+}
+
+
+
+
+
+/*
+
+@media only screen and (min-width:1229px){
+    header{
+
+        .header-content-layout{
+            margin: 5rem auto 0 auto;
+            gap: 5rem;
+            padding: initial;
+
+            
+            
+    
+            &_community{
+                text-align: initial;
+                margin: 5rem 0 0 0;
+
+
+                h3{
+                    font-size: 5rem;
+                    padding: initial;
+                    font-weight: 400;
+                }
+
+                p{
+                    font-size: 2rem;
+                }
+            }
+        }
+
+    }
+
+    main{
+
+        .content{
+            
+            div{
+                margin-top: 10rem;
+                margin-left: 12rem;
+
+                p{
+                    font-size: 2rem;
+                }
+            }
+
+            img{
+                width: 40rem;
+            }
+
+            div{
+
+                align-items: center;
+                
+                width: 80%;
+                
+
+                h3{
+                    font-size: 3rem;
+                }
+
+                
+            }
+        }
+
+        
+    }
+    
+}
+
+*/
+
+
