@@ -69,7 +69,7 @@ main {
     display: flex;
     flex-direction: column;
     background-color: #fff;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
     border-radius: 2rem;
     padding: 4rem 0;
     margin: 2rem; }
@@ -105,7 +105,7 @@ main {
   padding: 5rem 1rem;
   position: relative;
   bottom: -6rem;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); }
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05); }
   .in-between div h3 {
     font-size: 1.8rem;
     margin-bottom: 3rem; }
@@ -119,7 +119,8 @@ main {
 
 footer {
   background-color: #00252e;
-  padding: 15rem 0; }
+  padding-top: 15rem;
+  padding-bottom: 5rem; }
   footer img {
     width: initial; }
   footer .contact-info {
@@ -182,7 +183,9 @@ footer {
       margin-left: 5rem;
       align-items: center; }
       main .content div p {
-        padding: 2rem 0 4rem 0; } }
+        padding: 2rem 0 4rem 0; }
+  .in-between {
+    max-width: 80%; } }
 
 @media only screen and (min-width: 1024px) {
   header .header-content, header .nav-bar {
@@ -194,6 +197,8 @@ footer {
     font-size: initial; }
   main .content img {
     width: 30rem; }
+  .in-between {
+    max-width: 70%; }
   footer .contact-info {
     display: flex;
     justify-content: space-between; }
@@ -211,6 +216,18 @@ footer {
       margin-bottom: 0; }
   footer .copyright {
     text-align: right; } }
+
+@media only screen and (min-width: 1440px) {
+  .in-between {
+    max-width: 50%; }
+  main {
+    width: 93%;
+    margin: auto; }
+    main .content img {
+      width: 25rem;
+      margin: 0 auto; }
+  footer .contact-info .contact {
+    max-width: 40rem; } }
 
 /*
 

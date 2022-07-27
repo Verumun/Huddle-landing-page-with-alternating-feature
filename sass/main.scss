@@ -96,7 +96,7 @@ main{
        display: flex;
        flex-direction: column;
        background-color:#fff;
-       box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
+       box-shadow: 0 5px 10px rgba(0, 0, 0, .05);
        border-radius: 2rem;
        padding: 4rem 0;
        margin: 2rem;
@@ -162,7 +162,7 @@ main{
     padding: 5rem 1rem;
     position: relative;
     bottom: -6rem;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, .3);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .05);
 
     div{
 
@@ -185,7 +185,8 @@ main{
 
 footer{
     background-color: $Very-Dark-Cyan;
-    padding: 15rem 0;
+    padding-top: 15rem;
+    padding-bottom: 5rem;
 
     img{
         width: initial;
@@ -312,6 +313,9 @@ footer{
 
     }
     
+    .in-between{
+        max-width: 80%;
+    }
 }
 
 @media only screen and (min-width:1024px){
@@ -344,6 +348,12 @@ footer{
                 width: 30rem;
             }
         }
+
+        
+    }
+
+    .in-between{
+        max-width: 70%;
     }
 
     footer{
@@ -378,6 +388,39 @@ footer{
     }
 }
 
+
+@media only screen and (min-width: 1440px){
+    .in-between{max-width: 50%;}
+
+    main{
+
+        width: 93%;
+        margin: auto;
+     
+        .content{
+           
+           
+            
+            
+     
+            img{
+             width: 25rem;
+             margin: 0 auto;
+         
+         }
+            
+           
+        }
+     }
+
+     footer{
+         .contact-info{
+             .contact{
+                max-width: 40rem;
+             }
+         }
+     }
+}
 
 
 
